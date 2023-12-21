@@ -4,9 +4,9 @@ import { Content } from '../content/Content';
 import { Meta } from '../containers/layout/Meta';
 import { Main } from '../containers/templates/Main';
 
-const Twitter = () => (<i className='cursor-pointer bx bxl-twitter'></i>)
+// const Twitter = () => (<i className='cursor-pointer bx bxl-twitter'></i>)
 const Github = () => (<i className='cursor-pointer bx bxl-github'></i>)
-const Gitlab = () => (<i className='cursor-pointer bx bxl-gitlab'></i>)
+// const Gitlab = () => (<i className='cursor-pointer bx bxl-gitlab'></i>)
 const goto = (url: string) => window.open(url, '_blank');
 
 const About = () => (
