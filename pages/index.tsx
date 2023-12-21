@@ -114,7 +114,7 @@ const Home = () => {
                         <Twitter />
                       </div>
                     </div> */}
-                    <div className="avatar" onClick={_ => goto('https://github.com/sharmivijay94')}>
+                    <div className="avatar" onClick={_ => goto('https://github.com/sharmivijay23')}>
                       <div className="text-3xl">
                         <Github />
                       </div>
