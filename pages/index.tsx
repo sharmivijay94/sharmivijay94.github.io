@@ -26,7 +26,7 @@ const BlogPost = (props: any) => {
   );
 }
 
-const LatestBlogPosts = ({posts}: {posts: any[]}) => {
+const LatestBlogPosts = ({ posts }: { posts: any[] }) => {
   return (
     <div className='w-full md:w-1/2'>
       <h1 className='font-bold text-3xl'>
@@ -34,13 +34,13 @@ const LatestBlogPosts = ({posts}: {posts: any[]}) => {
       </h1>
       <div className='flex-col divide-y my-5'>
         {posts
-            .slice(0, 5)
-            .map((post: any) => <BlogPost key={post.slug} post={post}/>)}
+          .slice(0, 5)
+          .map((post: any) => <BlogPost key={post.slug} post={post} />)}
       </div>
       <div className='mt-5'>
         <button className='bg-sky-600 hover:bg-sky-800 py-1 px-2 rounded'>
           <Link href="/articles">
-            <a className= "px-1 text-sky-100 hover:text-sky-100 no-underline">Read all posts</a>
+            <a className="px-1 text-sky-100 hover:text-sky-100 no-underline">Read all posts</a>
           </Link>
         </button>
       </div>
@@ -63,7 +63,7 @@ const Project = (props: any) => {
   );
 }
 
-const ProjectShowcase = ({ projects }: { projects: any[]}) => {
+const ProjectShowcase = ({ projects }: { projects: any[] }) => {
   return (
     <div className='w-full md:w-1/2'>
       <h1 className='font-bold text-3xl tracking-wide underline decoration-sky-500 decoration-4 underline-offset-2'>
@@ -71,7 +71,7 @@ const ProjectShowcase = ({ projects }: { projects: any[]}) => {
       </h1>
       <div className='flex-col divide-y my-5'>
         {projects
-            .map((project: any) => <Project key={project.repoUrl} project={project}/>)}
+          .map((project: any) => <Project key={project.repoUrl} project={project} />)}
       </div>
       <div className='mt-5'>
         <button className='bg-sky-600 hover:bg-sky-800 py-1 px-2 rounded'>
@@ -102,42 +102,42 @@ const Home = (props: any) => {
               <div className='flex justify-center items-center'>
                 <div className="avatar">
                   <div className="w-24 rounded-full">
-                    <img src="https://avatars.githubusercontent.com/u/2135089" alt='profile picture' />
+                    <img src="https://avatars.githubusercontent.com/u/147314648" alt='profile picture' />
                   </div>
                 </div>
                 <div className='ml-5'>
-                  <p className='text-xl'>Ganessh Kumar R P</p>
+                  <p className='text-xl'>Sharmila Vijayakumar</p>
                   <div className='flex mt-2 w-full space-x-4'>
-                    <div className="avatar" onClick={_ => goto('https://twitter.com/ganesshkumar')}>
+                    {/* <div className="avatar" onClick={_ => goto('https://twitter.com/ganesshkumar')}>
                       <div className="text-3xl">
-                        <Twitter/>
+                        <Twitter />
+                      </div>
+                    </div> */}
+                    <div className="avatar" onClick={_ => goto('https://github.com/sharmivijay94')}>
+                      <div className="text-3xl">
+                        <Github />
                       </div>
                     </div>
-                    <div className="avatar" onClick={_ => goto('https://github.com/ganesshkumar')}>
+                    {/* <div className="avatar" onClick={_ => goto('https://gitlab.com/ganesshkumar')}>
                       <div className="text-3xl">
-                        <Github/>
+                        <Gitlab />
                       </div>
-                    </div>
-                    <div className="avatar" onClick={_ => goto('https://gitlab.com/ganesshkumar')}>
-                      <div className="text-3xl">
-                        <Gitlab/>
-                      </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
               <div className="pt-2 text-base text-center">
-                <div>I am a Full-Stack Software Engineer, currently building Microsoft Teams at Microsoft. I build and maintain Obsidian Plugins.</div>
+                {/* <div>I am a Full-Stack Software Engineer, currently building Microsoft Teams at Microsoft. I build and maintain Obsidian Plugins.</div> */}
               </div>
             </div>
           </header>
           <main className='my-10 container mx-auto w-100 lg:w-2/3 2xl:w-1/2 '>
-            <div className='flex space-x-8 mx-5'>
-              {/* Latest blog posts */}
-              <LatestBlogPosts posts={props.posts} />
-              {/* Latest projects */}
-              <ProjectShowcase projects={props.projects} />
-            </div>
+            {/* <div className='flex space-x-8 mx-5'> */}
+            {/* Latest blog posts*/}
+            {/* <LatestBlogPosts posts={props.posts} /> */}
+            {/* Latest projects */}
+            {/* <ProjectShowcase projects={props.projects} /> */}
+            {/* </div> */}
           </main>
         </div>
       </div>

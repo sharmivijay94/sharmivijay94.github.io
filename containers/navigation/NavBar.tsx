@@ -14,11 +14,11 @@ const Navbar = (props: INavbarProps) => (
   <nav>
     <ul className="navbar flex flex-wrap justify-center align-center items-center space-x-8 text-xl list-none">
       <li className={navbarContentClasses('Home', props.currentPage)}>
-        <Link href='/'> 
-          <div className='text-slate-900 cursor-pointer'> Home </div> 
+        <Link href='/'>
+          <div className='text-slate-900 cursor-pointer'> Home </div>
         </Link>
       </li>
-      <li className={navbarContentClasses('Articles', props.currentPage)}>
+      {/* <li className={navbarContentClasses('Articles', props.currentPage)}>
         <Link href='/articles'>
           <div className='text-slate-900 cursor-pointer'> Articles </div>
         </Link>
@@ -31,8 +31,8 @@ const Navbar = (props: INavbarProps) => (
       <li className={navbarContentClasses('Notes', props.currentPage)}>
         <Link href='/notes'>
           <div className='text-slate-900 cursor-pointer'> Notes </div>
-        </Link>
-      </li>
+        </Link> 
+      </li> */}
       <li className={navbarContentClasses('About', props.currentPage)}>
         <Link href='/about'>
           <div className='text-slate-900 cursor-pointer'> About </div>
