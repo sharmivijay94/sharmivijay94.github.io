@@ -37,7 +37,7 @@ const Main = (props: IMainProps) => {
 
       <div className="bg-gray-800 text-center py-8">
         <div className="container mx-auto w-100 lg:w-2/3 xl:1/2 text-slate-200">
-          Made with 💙 by <a className="visited:text-white" rel="me" href="https://github.com/sharmivijay94"><span className="text-white">Sharmila Vijayakumar</span></a><br />
+          Made with 💙 by <a className="visited:text-white" rel="me" href="https://github.com/sharmivijay23"><span className="text-white">Sharmila Vijayakumar</span></a><br />
         </div>
       </div>
     </div>

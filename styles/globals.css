@@ -85,3 +85,11 @@ body,
 .markdown p {
   margin: 10pt 0;
 }
+
+/* To be deleted */
+
+blockquote {
+  background-color: lightgray;
+  border-left: 10px solid gray;
+  padding: 2px;
+}

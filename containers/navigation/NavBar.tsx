@@ -18,7 +18,7 @@ const Navbar = (props: INavbarProps) => (
           <div className='text-slate-900 cursor-pointer'> Home </div>
         </Link>
       </li>
-      {/* <li className={navbarContentClasses('Articles', props.currentPage)}>
+      <li className={navbarContentClasses('Articles', props.currentPage)}>
         <Link href='/articles'>
           <div className='text-slate-900 cursor-pointer'> Articles </div>
         </Link>
@@ -31,8 +31,8 @@ const Navbar = (props: INavbarProps) => (
       <li className={navbarContentClasses('Notes', props.currentPage)}>
         <Link href='/notes'>
           <div className='text-slate-900 cursor-pointer'> Notes </div>
-        </Link> 
-      </li> */}
+        </Link>
+      </li>
       <li className={navbarContentClasses('About', props.currentPage)}>
         <Link href='/about'>
           <div className='text-slate-900 cursor-pointer'> About </div>
