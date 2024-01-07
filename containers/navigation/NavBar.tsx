@@ -28,11 +28,11 @@ const Navbar = (props: INavbarProps) => (
           <div className='text-slate-900 cursor-pointer'> Projects </div>
         </Link>
       </li>
-      <li className={navbarContentClasses('Notes', props.currentPage)}>
+      {/* <li className={navbarContentClasses('Notes', props.currentPage)}>
         <Link href='/notes'>
           <div className='text-slate-900 cursor-pointer'> Notes </div>
         </Link>
-      </li>
+      </li> */}
       <li className={navbarContentClasses('About', props.currentPage)}>
         <Link href='/about'>
           <div className='text-slate-900 cursor-pointer'> About </div>
