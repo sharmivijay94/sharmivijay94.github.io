@@ -149,7 +149,7 @@ const Home = () => {
 
 export const getStaticProps: GetStaticProps<any> = async () => {
   const posts = getAllPosts(['title', 'date', 'slug', 'image', 'tags']);
-  const projects = getShowcaseProjects(['title', 'summary', 'repoUrl', 'iconUrl']);
+  const projects = getShowcaseProjects(['title', 'tools', 'summary', 'repoUrl', 'iconUrl']);
 
   return {
     props: {

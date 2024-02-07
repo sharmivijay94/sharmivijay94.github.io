@@ -86,6 +86,7 @@ export function getProjectBySlug(slug: string, fields: string[] = []): ProjectIt
     title: '',
     summary: '',
     repoUrl: '',
+    tools: '',
     iconUrl: null,
     showcase: false,
     order: 0,
