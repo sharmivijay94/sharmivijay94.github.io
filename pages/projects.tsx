@@ -16,6 +16,7 @@ export type IProject = {
   iconUrl: string | null;
   repoUrl: string;
   summary: string;
+  tools: string;
   content: string;
   showcase: boolean;
 };
@@ -40,6 +41,7 @@ const Project = (props: IProject) => {
           {/* <div className="badge badge-secondary">NEW</div> */}
         </h2>
         <p className="text-slate-500">{props.summary}</p>
+        <p> {props.tools}</p>
         <div className='w-2/3'>
           <div className='mt-2 github-badges'
             // eslint-disable-next-line react/no-danger
@@ -68,6 +70,7 @@ const Projects = (props: IProjectsProps) => (
             repoUrl={project.repoUrl}
             iconUrl={project.iconUrl}
             summary={project.summary}
+            tools={project.tools}
             content={project.content}
             showcase={project.showcase}
           />
@@ -83,10 +86,11 @@ export const getStaticProps: GetStaticProps<IProjectsProps> = async () => {
   const projects = await Promise.all(
     projectSlugs.map(async (projectSlug) => {
       const {
-        title, summary, repoUrl, iconUrl, content, showcase
+        title, summary, tools, repoUrl, iconUrl, content, showcase
       } = getProjectBySlug(projectSlug.slug, [
         'title',
         'summary',
+        'tools',
         'iconUrl',
         'repoUrl',
         'content',
@@ -96,6 +100,7 @@ export const getStaticProps: GetStaticProps<IProjectsProps> = async () => {
       return {
         title,
         summary,
+        tools,
         repoUrl,
         iconUrl: iconUrl || null,
         content: await markdownToHtml(content || ''),

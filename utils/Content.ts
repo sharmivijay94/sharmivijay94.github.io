@@ -23,6 +23,7 @@ export type PostItems = {
 export type ProjectItems = {
   title: string;
   summary: string;
+  tools: string;
   repoUrl: string;
   iconUrl: string | null;
   showcase: boolean;
@@ -139,6 +140,6 @@ export function getShowcaseProjects(fields: string[] = []) {
     .map((slug) => getProjectBySlug(slug, fields))
     .filter(project => project.showcase)
     .sort((project1, project2) => (project1.order < project2.order ? 1 : -1));
-  
+
   return projects;
 }
